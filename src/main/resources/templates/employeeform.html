@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Handling Form Values with A Java Bean</title>
+</head>
+<body>
+<form action="#" th:action="@{/employeeform}" th:object="${employee}" method="post">
+    Employee's first name:<input type="text" th:field="*{firsName}"/><br/>
+    Employee's last name:<input type="text" th:field="*{lastName}"/><br/>
+    Employee's SSN: <input type="text" th:field="*{ssn}"><br/>
+    Employee's BOD: <input type="number" th:field="*{dob}"/> (Use ddMMyyyy format.)<br/>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
