@@ -15,12 +15,12 @@ public class Employee {
     private String dob;
 
 
-    public String getFirsName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFirsName(String firsName) {
-        this.firstName = firsName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
